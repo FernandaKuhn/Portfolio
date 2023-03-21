@@ -9,11 +9,11 @@ const App = () => {
   return (
     <BrowserRouter>
       <Header />
-    <div>
+    
       <Home/>
 
       <Contato/>
-     </div> 
+      
       <Footer/>
    </BrowserRouter>
    

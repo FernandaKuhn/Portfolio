@@ -4,7 +4,10 @@ import Logo from '../img/Front-End.png'
 
 
 
+
+
 const Home = () => {
+
     return (
         <main className='containerHome'>
             <div>
@@ -43,11 +46,13 @@ const Home = () => {
                         </ul>
                     </ul>
                     <div>
-                        <button className='buttonGit'>
-                            GitHub
-                        </button>
+                        <a href="https://github.com/FernandaKuhn" target="_blank" rel="noopener noreferrer">
+                            <button className='buttonGit' >
+                                GitHub
+                            </button>
+                        </a>
                     </div>
-                </div>        
+                </div>
             </div>
 
         </main>

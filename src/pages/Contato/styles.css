@@ -11,6 +11,7 @@
 }
 .containerContato .title{
     font-size: 40px;
+    margin-top: -50px;
     padding: 40px;
     color: #fff;
     text-shadow: 0 0 5px #080000, 0 0 10px #2b02fd, 0 0 15px #000399, 0 0 20px #0e11bd, 0 0 30px #0d0aa8b4, 0 0 40px #7904ff;
