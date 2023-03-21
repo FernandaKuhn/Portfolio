@@ -4,9 +4,7 @@ import './styles.css';
 
 const Header = () => {
     return (
-        <header className="container">
-
-
+        <header className="containerHeader">
             <ul>
                 <li>Home</li>
                 <li>Contato</li>

@@ -1,18 +1,17 @@
-.container{
-    height: 90px;
+.containerHeader{
+    height: 40px;
     display: flex;
     background-color: rgb(133, 52, 183);
     justify-content: space-between;
     align-items: center;
-    height: 75px;
 }
 
-.container ul{
+.containerHeader ul{
     list-style: none;
     display: flex;
 }
 
-.container ul li{
+.containerHeader ul li{
     font-size: 26px;
     padding: 0 40px;
     text-decoration: none;
