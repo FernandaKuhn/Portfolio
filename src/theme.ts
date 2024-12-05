@@ -3,14 +3,14 @@ import { createTheme, responsiveFontSizes } from "@mui/material";
 let theme = createTheme({
     palette: {
         primary: {
-            main: '#121212',
+            main: '#2b2b2b',
         },
         secondary: {
-            main: '#944deb',
+            main: '#e8e8e8',
         },
     },
     typography: {
-        fontFamily: "MontserratDM Sans"
+        fontFamily: "Didact Gothic"
     }
 });
 
