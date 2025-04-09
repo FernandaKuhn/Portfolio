@@ -45,7 +45,7 @@ const Hero = () => {
                   </StyledButton>
                 </Grid>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <StyledButton onClick={() => alert("Redirecionando para LinkedIn")}>
+                  <StyledButton onClick={() => window.open("https://www.linkedin.com/in/fernandakuhn/", "_blank")}>
                     <LinkedInIcon />
                     <Typography> LinkedIn </Typography>
                   </StyledButton>
