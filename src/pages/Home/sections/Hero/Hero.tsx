@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import Avatar from "../../../../assets/images/perfil-fefa.jpeg";
+import Avatar from "../../../../assets/images/eu.jpg";
 import { Container, Grid, Typography } from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
