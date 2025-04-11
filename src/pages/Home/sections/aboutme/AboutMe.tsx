@@ -15,6 +15,7 @@ const StyledAboutMe = styled("div")`
 const StyledImg = styled("img")`
   width: 100%;
   max-width: 90%;
+  padding-left: 1rem;
   border-bottom: 1px solid #6b6b6b;
   box-shadow: 0 0 12px #5e5e5e,;
 `;
