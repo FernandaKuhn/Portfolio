@@ -25,6 +25,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children, onClick }) => {
   &:hover {
   background-color: #d17104;
   }
+  cursor: pointer;
 `;
 
 
