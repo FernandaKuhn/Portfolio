@@ -5,15 +5,30 @@ import Hero from "./sections/hero/Hero";
 import { Projects } from "./sections/myprojects/Projects";
 import { Technologies } from "./sections/technologies/Technologies";
 
+
+
 const Home = () => {
   return (
     <>
       <NavBar />
-      <Hero />
-      <AboutMe/>
-      <Technologies/>
-      <Projects/>
-      <Footer/>
+
+      <div id="hero">
+        <Hero />
+      </div>
+
+      <div id="aboutme">
+        <AboutMe />
+      </div>
+
+      <div id="technologies">
+        <Technologies />
+      </div>
+
+      <div id="projects">
+        <Projects />
+      </div>
+
+      <Footer />
     </>
   )
 }

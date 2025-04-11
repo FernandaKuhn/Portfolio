@@ -14,7 +14,8 @@ const StyledHero = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  
+  user-select: none;
+  cursor: default;
 `;
 
 const StyledImg = styled.img`
@@ -35,7 +36,10 @@ const Hero = () => {
               <StyledImg src={Avatar} alt="Avatar" />
             </Grid>
             <Grid item xs={12} md={7} >
-              <Typography color="secondary" variant="h1" textAlign="center" pb={2}>Fernanda Kuhn</Typography>
+              <Typography
+                color="secondary" variant="h1" textAlign="center" pb={2} sx={{ whiteSpace: "nowrap" }}>
+                Fernanda Kuhn
+              </Typography>
               <Typography color="secondary" variant="h3" textAlign="center">Desenvolvedora Front-End!<img src={orange} height={35} /> </Typography>
               <Grid container display="flex" justifyContent="center" spacing={3} >
                 <Grid item xs={12} md={4} display="flex" justifyContent="center" >

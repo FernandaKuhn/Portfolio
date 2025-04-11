@@ -10,7 +10,7 @@ let theme = createTheme({
         },
     },
     typography: {
-        fontFamily: "Didact Gothic"
+        fontFamily: 'Poppins, sans-serif',
     }
 });
 

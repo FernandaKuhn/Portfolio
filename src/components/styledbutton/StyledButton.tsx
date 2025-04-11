@@ -22,10 +22,15 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children, onClick }) => {
   gap: 10px;
   width: 100%;
   color: #e8e8e8;
-  &:hover {
-  background-color: #d17104;
-  }
   cursor: pointer;
+
+  &:hover {
+    background-color: #d17104;
+  }
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 
