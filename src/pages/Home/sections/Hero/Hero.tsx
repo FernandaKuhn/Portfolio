@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import Avatar from "../../../../assets/images/eu.jpg";
+import Avatar from "../../../../assets/images/eudesign.png";
 import { Container, Grid, Typography } from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -20,9 +20,6 @@ const StyledHero = styled.div`
 
 const StyledImg = styled.img`
   width: 80%;
-  border-radius: 50%;
-  border: 1px solid #d17104;
-  box-shadow: 0 0 12px #d17104, 0 0 12px #d17104, 0 0 12px #d17104;
   margin: 0 auto;
 `;
 
