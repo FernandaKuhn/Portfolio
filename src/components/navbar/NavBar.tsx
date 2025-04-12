@@ -30,6 +30,7 @@ const NavBar = () => {
     cursor: pointer;
     display: flex;
     justify-content: space-evenly;
+    user-select: none;
   `;
 
     return (
