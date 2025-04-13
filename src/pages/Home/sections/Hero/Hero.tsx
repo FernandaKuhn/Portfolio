@@ -5,6 +5,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import StyledButton from "../../../../components/styledbutton/StyledButton";
 import orange from "../../../../assets/images/orange.png"
+import Zoom from "@mui/material/Zoom";
 
 
 
@@ -21,6 +22,11 @@ const StyledHero = styled.div`
 const StyledImg = styled.img`
   width: 80%;
   margin: 0 auto;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 const Hero = () => {
@@ -30,7 +36,9 @@ const Hero = () => {
         <Container maxWidth="lg">
           <Grid container spacing={2}>
             <Grid item xs={12} md={5} display="flex" justifyContent="center">
-              <StyledImg src={Avatar} alt="Avatar" />
+              <Zoom in={true} style={{ transitionDelay: '500ms' }}>
+                <StyledImg src={Avatar} alt="Avatar" />
+              </Zoom>
             </Grid>
             <Grid item xs={12} md={7} >
               <Typography
@@ -39,17 +47,25 @@ const Hero = () => {
               </Typography>
               <Typography color="secondary" variant="h3" textAlign="center">Desenvolvedora Front-End!<img src={orange} height={35} /> </Typography>
               <Grid container display="flex" justifyContent="center" spacing={3} >
-                <Grid item xs={12} md={4} display="flex" justifyContent="center" >
-                  <StyledButton onClick={() => alert("Iniciando download")}>
-                    <DownloadIcon />
-                    <Typography> Download CV</Typography>
-                  </StyledButton>
+                <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                  <Zoom in={true} style={{ transitionDelay: '700ms' }}>
+                    <div>
+                      <StyledButton onClick={() => alert("Iniciando download")}>
+                        <DownloadIcon />
+                        <Typography> Download CV</Typography>
+                      </StyledButton>
+                    </div>
+                  </Zoom>
                 </Grid>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <StyledButton onClick={() => window.open("https://www.linkedin.com/in/fernandakuhn/", "_blank")}>
-                    <LinkedInIcon />
-                    <Typography> LinkedIn </Typography>
-                  </StyledButton>
+                  <Zoom in={true} style={{ transitionDelay: '900ms' }}>
+                    <div>
+                      <StyledButton onClick={() => window.open("https://www.linkedin.com/in/fernandakuhn/", "_blank")}>
+                        <LinkedInIcon />
+                        <Typography> LinkedIn </Typography>
+                      </StyledButton>
+                    </div>
+                  </Zoom>
                 </Grid>
               </Grid>
             </Grid>
