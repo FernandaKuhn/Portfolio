@@ -11,7 +11,6 @@ const Footer = () => {
     justify-content: center;
     padding-top: 10px;
     width: 100%;
-    box-shadow: 0 0 2px #d17104, 0 0 2px #d17104, 0 0 2px #d17104;
     color: #fff;
    `;
 
