@@ -29,7 +29,7 @@ const StyledImg = styled.img`
   }
 `;
 
-const Hero = () => {
+const Hero2 = () => {
   return (
     <>
       <StyledHero>
@@ -76,4 +76,4 @@ const Hero = () => {
   );
 }
 
-export default Hero;
+export default Hero2;
