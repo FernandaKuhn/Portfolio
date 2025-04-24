@@ -19,6 +19,7 @@
     "petbank": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-intersection-observer": "^9.16.0",
     "react-scroll": "^1.9.3"
   },
   "devDependencies": {
