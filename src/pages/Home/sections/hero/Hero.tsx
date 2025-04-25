@@ -12,13 +12,14 @@ import Zoom from "@mui/material/Zoom";
 
 const StyledHero = styled.div`
   background-image: linear-gradient(-45deg, #171717 0%, #171717 25%, #2b2b2b 51%, #171717 100%);
-  height: 100vh;
+  min-height: 100vh;
+  padding: 4rem 0;
   display: flex;
   align-items: center;
   user-select: none;
   cursor: default;
+  box-sizing: border-box;
 `;
-
 const StyledImg = styled.img`
   width: 80%;
   margin: 0 auto;

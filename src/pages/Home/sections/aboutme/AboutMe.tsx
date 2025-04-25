@@ -4,7 +4,8 @@ import Avatar from "../../../../assets/images/avatarcelular.png";
 
 const StyledAboutMe = styled("div")`
   background-color: #3d3d3dec;
-  height: 75vh;
+  min-height: 75vh;
+  padding: 4rem 0;
   display: flex;
   align-items: center;
   color: #fbfbfb;
