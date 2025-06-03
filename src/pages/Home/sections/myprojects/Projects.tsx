@@ -1,63 +1,121 @@
-import { styled, Typography, Button, Card, CardContent, CardActions } from "@mui/material";
+import {
+    styled,
+    Typography,
+    Button,
+    Card,
+    CardContent,
+    CardActions,
+    CardMedia,
+} from "@mui/material";
 
 const StyledProjects = styled("div")`
-  background-color: #3d3d3dec;
-  min-height: 100vh;
-  padding: 40px 20px;
-  color: #fbfbfb;
-  user-select: none;
-  cursor: default;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+    background-color: #3d3d3dec;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #fbfbfb;
+    user-select: none;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  `;
 
 const Title = styled(Typography)`
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
-`;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  `;
 
 const CardsContainer = styled("div")`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px;
-`;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  `;
 
 const ProjectCard = styled(Card)`
-  background-color: #505050;
-  color: #fff;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-  &:hover {
-    transform: scale(1.03);
-  }
-`;
+    background-color: #505050;
+    color: #fff;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.03);
+    }
+  `;
+
+const projectsData = [
+    {
+        id: 1,
+        title: "ByteBank",
+        description: "Desenvolvido para um desafio da FIAP utilizando Next.js e React. A proposta foi construir uma aplicação baseada no design do Figma, implementando o Material UI, Node.Js e Docker. Além disso, o projeto inclui um servidor JSON local para simular uma API REST e um ambiente de desenvolvimento de componentes com Storybook.",
+        image: "./src/assets/images/bytebankweb.png",
+        github: "https://github.com/dudscode/financeiro-tech-challenge",
+        deploy: "https://www.linkedin.com/feed/update/urn:li:activity:7259685931937361920/",
+    },
+    {
+        id: 2,
+        title: "HistoLeague",
+        description: "Um site desenvolvido com ReactJS, CSS Modules e JSON-Server, que apresenta de forma interativa a trajetória do Brasil em campeonatos de League of Legends. O projeto reúne dados históricos sobre participações, resultados e curiosidades das equipes brasileiras em competições internacionais.",
+        image: "./src/assets/images/histoleague.png",
+        github: "https://github.com/seuusuario/projeto2",
+        deploy: "https://histoleague.vercel.app/",
+    },
+    {
+        id: 3,
+        title: "ByteBank APP",
+        description: "Desenvolvido para oferecer uma experiência moderna e intuitiva em dispositivos móveis, utilizando o ecossistema React Native com Expo. O projeto integra diversos recursos, como navegação avançada via Expo Router, formulários otimizados com React Hook Form e autenticação com Firebase. ",
+        image: "./src/assets/images/bytebankmobile.png",
+        github: "https://github.com/dudscode/financeiro-tech-react-native",
+        deploy: "",
+    },
+    {
+        id: 3,
+        title: "Spotify Gamer",
+        description: "Uma aplicação feita com React, NodeJs e Json-server, com o objetivo de criar um espaço dedicado para gamers dentro do Spotify. Este espaço visa oferecer playlists elaboradas para diferentes momentos de jogos, podcasts de ajudas e curiosidades, e trilhas sonoras inesquecíveis. ",
+        image: "./src/assets/images/spotigamer.jpg",
+        github: "https://github.com/FernandaKuhn/spotify-react",
+        deploy: "",
+    },
+];
 
 const Projects = () => {
     return (
         <StyledProjects>
             <Title>Projetos</Title>
             <CardsContainer>
-                {[1, 2, 3, 4].map((item) => (
-                    <ProjectCard key={item}>
+                {projectsData.map((project) => (
+                    <ProjectCard key={project.id}>
+                        <CardMedia
+                            component="img"
+                            height="200"
+                            image={project.image}
+                            alt={`Imagem do ${project.title}`}
+                        />
                         <CardContent>
                             <Typography variant="h6" gutterBottom>
-                                Projeto {item}
+                                {project.title}
                             </Typography>
-                            futura imagem
-                            <Typography variant="body2">
-                                Descrição breve do projeto {item}.
-                            </Typography>
+                            <Typography variant="body2">{project.description}</Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small" variant="contained" color="primary" href="link-repositorio" target="_blank">
-                                Repositório
+                            <Button
+                                size="small"
+                                variant="contained"
+                                color="primary"
+                                href={project.github}
+                                target="_blank"
+                            >
+                                GitHub
                             </Button>
-                            <Button size="small" variant="outlined" color="secondary" href="link-deploy" target="_blank">
+                            <Button
+                                size="small"
+                                variant="outlined"
+                                color="secondary"
+                                href={project.deploy}
+                                target="_blank"
+                            >
                                 Deploy
                             </Button>
                         </CardActions>
