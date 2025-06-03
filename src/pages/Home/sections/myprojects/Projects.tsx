@@ -1,12 +1,11 @@
 import {
-    styled,
-    Typography,
-    Button,
-    Card,
-    CardContent,
-    CardActions,
-    CardMedia,
+    styled, Typography, Button, Card, CardContent, CardActions, CardMedia,
 } from "@mui/material";
+import bytebankweb from "../../../../assets/images/bytebankweb.png";
+import histoleague from "../../../../assets/images/histoleague.png";
+import bytebankmobile from "../../../../assets/images/bytebankmobile.png";
+import spotigamer from "../../../../assets/images/spotigamer.jpg";
+
 
 const StyledProjects = styled("div")`
     background-color: #3d3d3dec;
@@ -50,7 +49,7 @@ const projectsData = [
         id: 1,
         title: "ByteBank",
         description: "Desenvolvido para um desafio da FIAP utilizando Next.js e React. A proposta foi construir uma aplicação baseada no design do Figma, implementando o Material UI, Node.Js e Docker. Além disso, o projeto inclui um servidor JSON local para simular uma API REST e um ambiente de desenvolvimento de componentes com Storybook.",
-        image: "../src/assets/images/bytebankweb.png",
+        image: bytebankweb,
         github: "https://github.com/dudscode/financeiro-tech-challenge",
         deploy: "https://www.linkedin.com/feed/update/urn:li:activity:7259685931937361920/",
     },
@@ -58,7 +57,7 @@ const projectsData = [
         id: 2,
         title: "HistoLeague",
         description: "Um site desenvolvido com ReactJS, CSS Modules e JSON-Server, que apresenta de forma interativa a trajetória do Brasil em campeonatos de League of Legends. O projeto reúne dados históricos sobre participações, resultados e curiosidades das equipes brasileiras em competições internacionais.",
-        image: "../src/assets/images/histoleague.png",
+        image: histoleague,
         github: "https://github.com/seuusuario/projeto2",
         deploy: "https://histoleague.vercel.app/",
     },
@@ -66,7 +65,7 @@ const projectsData = [
         id: 3,
         title: "ByteBank APP",
         description: "Desenvolvido para oferecer uma experiência moderna e intuitiva em dispositivos móveis, utilizando o ecossistema React Native com Expo. O projeto integra diversos recursos, como navegação avançada via Expo Router, formulários otimizados com React Hook Form e autenticação com Firebase. ",
-        image: "../src/assets/images/bytebankmobile.png",
+        image: bytebankmobile,
         github: "https://github.com/dudscode/financeiro-tech-react-native",
         deploy: "",
     },
@@ -74,7 +73,7 @@ const projectsData = [
         id: 3,
         title: "Spotify Gamer",
         description: "Uma aplicação feita com React, NodeJs e Json-server, com o objetivo de criar um espaço dedicado para gamers dentro do Spotify. Este espaço visa oferecer playlists elaboradas para diferentes momentos de jogos, podcasts de ajudas e curiosidades, e trilhas sonoras inesquecíveis. ",
-        image: "../src/assets/images/spotigamer.jpg",
+        image: spotigamer,
         github: "https://github.com/FernandaKuhn/spotify-react",
         deploy: "",
     },
