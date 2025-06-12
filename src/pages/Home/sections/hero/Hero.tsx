@@ -50,12 +50,12 @@ const Hero = () => {
               <Grid container display="flex" justifyContent="center" spacing={3} >
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
                   <Zoom in={true} style={{ transitionDelay: '700ms' }}>
-                    <div>
-                      <StyledButton onClick={() => alert("Iniciando download")}>
-                        <DownloadIcon />
-                        <Typography> Download CV</Typography>
-                      </StyledButton>
-                    </div>
+                    <StyledButton
+                      onClick={() => window.open('../src/assets/curriculo.pdf', '_blank')}
+                    >
+                      <DownloadIcon />
+                      <Typography>Download CV</Typography>
+                    </StyledButton>
                   </Zoom>
                 </Grid>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
