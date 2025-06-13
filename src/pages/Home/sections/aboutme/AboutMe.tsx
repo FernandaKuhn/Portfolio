@@ -37,7 +37,7 @@ const AboutMe = () => {
                             Sou analista de sistemas há 4 anos, com experiência em liderança de equipe, planejamento estratégico e desenvolvimento de soluções, incluindo a estilização de dashboards com CSS.
                         </Typography>
                         <Typography mt={2} fontSize="1.2rem">
-                            Atualmente faço pós-graduação em Front-End Engineer, onde tive a certeza de que é nessa área que realmente me encontrei. Tenho me aprofundado em arquitetura de interfaces, design system, Docker, AWS e outras tecnologias correlacionadas.
+                            Atualmente faço pós-graduação em Front-End Engineer e tenho me aprofundado em arquitetura de interfaces, design system, Docker, AWS e outras tecnologias correlacionadas.
                         </Typography>
 
                         <Typography mt={2} fontSize="1.2rem">
