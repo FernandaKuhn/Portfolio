@@ -1,6 +1,7 @@
 import { Grid, styled, Typography, Box } from "@mui/material";
 import { motion } from "framer-motion";
 import JS from "../../../../assets/images/javascript.png";
+import Java from "../../../../assets/images/java.png";
 import ReactLogo from "../../../../assets/images/react.png";
 import Native from "../../../../assets/images/native.png";
 import MaterialUI from "../../../../assets/images/materialUI.png";
@@ -53,40 +54,41 @@ const TechText = styled(Typography)`
 `;
 
 export const Technologies = () => {
-    const techs = [
-        { name: "JavaScript", icon: JS },
-        { name: "React.js", icon: ReactLogo },
-        { name: "TypeScript", icon: TypeScript },
-        { name: "Node.js", icon: Node },
-        { name: "Angular", icon: Angular },
-        { name: "Docker", icon: Docker },
-        { name: "Material UI", icon: MaterialUI },
-        { name: "React Native", icon: Native },
-        { name: "Flutter", icon: Flutter },
-        { name: "HTML", icon: HTML },
-        { name: "CSS", icon: CSS },
-    ];
+  const techs = [
+    { name: "JavaScript", icon: JS },
+    { name: "Java", icon: Java },
+    { name: "React.js", icon: ReactLogo },
+    { name: "TypeScript", icon: TypeScript },
+    { name: "Node.js", icon: Node },
+    { name: "Angular", icon: Angular },
+    { name: "Docker", icon: Docker },
+    { name: "Material UI", icon: MaterialUI },
+    { name: "React Native", icon: Native },
+    { name: "Flutter", icon: Flutter },
+    { name: "HTML", icon: HTML },
+    { name: "CSS", icon: CSS },
+  ];
 
-    return (
-        <StyledTech>
-            <StyledTitle>Tecnologias</StyledTitle>
-            <Grid container spacing={3} justifyContent="center">
-                {techs.map((tech, index) => (
-                    <Grid item xs={12} sm={6} md={4} key={index}>
-                        <motion.div
-                            initial={{ scale: 0.8, opacity: 0 }}
-                            whileInView={{ scale: 1, opacity: 1 }}
-                            transition={{ duration: 0.4, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                        >
-                            <TechCard>
-                                <TechImage src={tech.icon} alt={`${tech.name} logo`} />
-                                <TechText>{tech.name}</TechText>
-                            </TechCard>
-                        </motion.div>
-                    </Grid>
-                ))}
-            </Grid>
-        </StyledTech>
-    );
+  return (
+    <StyledTech>
+      <StyledTitle>Tecnologias</StyledTitle>
+      <Grid container spacing={3} justifyContent="center">
+        {techs.map((tech, index) => (
+          <Grid item xs={12} sm={6} md={4} key={index}>
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <TechCard>
+                <TechImage src={tech.icon} alt={`${tech.name} logo`} />
+                <TechText>{tech.name}</TechText>
+              </TechCard>
+            </motion.div>
+          </Grid>
+        ))}
+      </Grid>
+    </StyledTech>
+  );
 };
