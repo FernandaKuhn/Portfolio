@@ -49,24 +49,22 @@ const Hero = () => {
               <Typography color="secondary" variant="h3" textAlign="center">Desenvolvedora Front-End!<img src={orange} height={35} /> </Typography>
               <Grid container display="flex" justifyContent="center" spacing={3} >
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <Zoom in={true} style={{ transitionDelay: '700ms' }}>
-                    <StyledButton
-                      onClick={() => window.open('../src/assets/curriculo.pdf', '_blank')}
-                    >
-                      <DownloadIcon />
-                      <Typography>Download CV</Typography>
-                    </StyledButton>
-                  </Zoom>
+
+                  <StyledButton
+                    onClick={() => window.open('../src/assets/curriculo.pdf', '_blank')}
+                  >
+                    <DownloadIcon />
+                    <Typography>Download CV</Typography>
+                  </StyledButton>
+
                 </Grid>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <Zoom in={true} style={{ transitionDelay: '900ms' }}>
                     <div>
                       <StyledButton onClick={() => window.open("https://www.linkedin.com/in/fernandakuhn/", "_blank")}>
                         <LinkedInIcon />
                         <Typography> LinkedIn </Typography>
                       </StyledButton>
                     </div>
-                  </Zoom>
                 </Grid>
               </Grid>
             </Grid>
