@@ -6,6 +6,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import StyledButton from "../../../../components/styledbutton/StyledButton";
 import orange from "../../../../assets/images/orange.png"
 import Zoom from "@mui/material/Zoom";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 
@@ -43,28 +44,37 @@ const Hero = () => {
             </Grid>
             <Grid item xs={12} md={7} >
               <Typography
-                color="secondary" variant="h1" textAlign="center" pb={2} sx={{ whiteSpace: "nowrap" }}>
+                color="secondary"
+                variant="h2"
+                textAlign="center"
+                pb={2}>
                 Fernanda Kuhn
               </Typography>
               <Typography color="secondary" variant="h3" textAlign="center">Desenvolvedora Web!<img src={orange} height={35} /> </Typography>
-              <Grid container display="flex" justifyContent="center" spacing={3} >
+              <Grid container spacing={2} justifyContent="center">
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-
-                  <StyledButton
-                    onClick={() => window.open('../../public/curriculo.pdf', '_blank')}
-                  >
+                  <StyledButton onClick={() => window.open('/curriculo.pdf', '_blank')}>
                     <DownloadIcon />
                     <Typography>Download CV</Typography>
                   </StyledButton>
-
                 </Grid>
-                <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <div>
-                    <StyledButton onClick={() => window.open("https://www.linkedin.com/in/fernandakuhn/", "_blank")}>
-                      <LinkedInIcon />
-                      <Typography> LinkedIn </Typography>
-                    </StyledButton>
-                  </div>
+
+                <Grid item xs={12} md={8}>
+                  <Grid container spacing={2} justifyContent="center">
+                    <Grid item xs={6} md={6} display="flex" justifyContent="center">
+                      <StyledButton onClick={() => window.open("https://www.linkedin.com/in/fernandakuhn/", "_blank")}>
+                        <LinkedInIcon />
+                        <Typography>LinkedIn</Typography>
+                      </StyledButton>
+                    </Grid>
+
+                    <Grid item xs={6} md={6} display="flex" justifyContent="center">
+                      <StyledButton onClick={() => window.open("https://github.com/FernandaKuhn", "_blank")}>
+                        <GitHubIcon />
+                        <Typography>GitHub</Typography>
+                      </StyledButton>
+                    </Grid>
+                  </Grid>
                 </Grid>
               </Grid>
             </Grid>
