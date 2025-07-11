@@ -5,6 +5,7 @@ import bytebankweb from "../../../../assets/images/bytebankweb.png";
 import histoleague from "../../../../assets/images/histoleague.png";
 import bytebankmobile from "../../../../assets/images/bytebankmobile.png";
 import spotigamer from "../../../../assets/images/spotigamer.jpg";
+import seuestoqueonline from "../../../../assets/images/seu-estoque-online.png";
 
 
 const StyledProjects = styled("div")`
@@ -55,6 +56,14 @@ const projectsData = [
     },
     {
         id: 2,
+        title: "Seu Estoque Online",
+        description: "Aplicação para gerenciamento de estoque, com back-end em Java (Spring Boot, JPA, H2) e front-end em React (TypeScript, Material UI, Axios). Permite cadastrar, alterar, excluir produtos e gerenciar estoque com dados de criação e atualização armazenados. A aplicação expõe uma API REST documentada com Swagger.",
+        image: seuestoqueonline,
+        github: "https://github.com/FernandaKuhn/seu-estoque-online",
+        deploy: "",
+    },
+    {
+        id: 3,
         title: "HistoLeague",
         description: "Um site desenvolvido com ReactJS, CSS Modules e JSON-Server, que apresenta de forma interativa a trajetória do Brasil em campeonatos de League of Legends. O projeto reúne dados históricos sobre participações, resultados e curiosidades das equipes brasileiras em competições internacionais.",
         image: histoleague,
@@ -62,7 +71,7 @@ const projectsData = [
         deploy: "https://histoleague.vercel.app/",
     },
     {
-        id: 3,
+        id: 4,
         title: "ByteBank APP",
         description: "Desenvolvido para oferecer uma experiência moderna e intuitiva em dispositivos móveis, utilizando o ecossistema React Native com Expo. O projeto integra diversos recursos, como navegação avançada via Expo Router, formulários otimizados com React Hook Form e autenticação com Firebase. ",
         image: bytebankmobile,
@@ -70,7 +79,7 @@ const projectsData = [
         deploy: "",
     },
     {
-        id: 3,
+        id: 5,
         title: "Spotify Gamer",
         description: "Uma aplicação feita com React, NodeJs e Json-server, com o objetivo de criar um espaço dedicado para gamers dentro do Spotify. Este espaço visa oferecer playlists elaboradas para diferentes momentos de jogos, podcasts de ajudas e curiosidades, e trilhas sonoras inesquecíveis. ",
         image: spotigamer,
